@@ -1,9 +1,15 @@
 package id.my.hendisantika.springbootretrysample.controller;
 
+import id.my.hendisantika.springbootretrysample.entity.Movie;
 import id.my.hendisantika.springbootretrysample.service.MovieService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.ResourceAccessException;
 
 /**
  * Created by IntelliJ IDEA.
@@ -21,4 +27,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class MovieController {
 
     private final MovieService movieService;
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Movie> getMovieById(@PathVariable String id) {
+        try {
+            Movie movie = movieService.getMovieDetails(id);
+            return ResponseEntity.ok(movie);
+        } catch (ResourceAccessException e) {
+            return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).build();
+        }
+    }
 }
