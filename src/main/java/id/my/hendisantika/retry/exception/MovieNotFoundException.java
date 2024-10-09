@@ -1,4 +1,4 @@
-package id.my.hendisantika.springbootretrysample.exception;
+package id.my.hendisantika.retry.exception;
 
 /**
  * Created by IntelliJ IDEA.

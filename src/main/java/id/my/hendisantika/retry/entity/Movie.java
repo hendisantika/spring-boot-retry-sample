@@ -1,4 +1,4 @@
-package id.my.hendisantika.springbootretrysample.entity;
+package id.my.hendisantika.retry.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

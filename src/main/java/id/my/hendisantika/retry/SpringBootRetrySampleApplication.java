@@ -1,4 +1,4 @@
-package id.my.hendisantika.springbootretrysample;
+package id.my.hendisantika.retry;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

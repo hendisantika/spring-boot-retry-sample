@@ -1,7 +1,7 @@
-package id.my.hendisantika.springbootretrysample.rest.client;
+package id.my.hendisantika.retry.rest.client;
 
-import id.my.hendisantika.springbootretrysample.entity.Movie;
-import id.my.hendisantika.springbootretrysample.exception.MovieNotFoundException;
+import id.my.hendisantika.retry.entity.Movie;
+import id.my.hendisantika.retry.exception.MovieNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;

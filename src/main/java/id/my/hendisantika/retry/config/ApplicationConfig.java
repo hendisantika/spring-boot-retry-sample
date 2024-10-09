@@ -1,4 +1,4 @@
-package id.my.hendisantika.springbootretrysample.config;
+package id.my.hendisantika.retry.config;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;

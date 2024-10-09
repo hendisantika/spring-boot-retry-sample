@@ -1,7 +1,7 @@
-package id.my.hendisantika.springbootretrysample.controller.mock;
+package id.my.hendisantika.retry.controller.mock;
 
-import id.my.hendisantika.springbootretrysample.entity.Movie;
-import id.my.hendisantika.springbootretrysample.exception.MovieNotFoundException;
+import id.my.hendisantika.retry.entity.Movie;
+import id.my.hendisantika.retry.exception.MovieNotFoundException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

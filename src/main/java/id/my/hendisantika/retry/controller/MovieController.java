@@ -1,7 +1,7 @@
-package id.my.hendisantika.springbootretrysample.controller;
+package id.my.hendisantika.retry.controller;
 
-import id.my.hendisantika.springbootretrysample.entity.Movie;
-import id.my.hendisantika.springbootretrysample.service.MovieService;
+import id.my.hendisantika.retry.entity.Movie;
+import id.my.hendisantika.retry.service.MovieService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

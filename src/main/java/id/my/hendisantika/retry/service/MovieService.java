@@ -1,7 +1,7 @@
-package id.my.hendisantika.springbootretrysample.service;
+package id.my.hendisantika.retry.service;
 
-import id.my.hendisantika.springbootretrysample.entity.Movie;
-import id.my.hendisantika.springbootretrysample.rest.client.MovieApiClient;
+import id.my.hendisantika.retry.entity.Movie;
+import id.my.hendisantika.retry.rest.client.MovieApiClient;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.retry.annotation.Backoff;
